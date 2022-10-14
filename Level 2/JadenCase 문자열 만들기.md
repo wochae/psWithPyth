@@ -36,5 +36,6 @@ def solution(s):
 ```
 hakim
 ```py
-// code
+def solution(s):
+    return ''.join([char.upper() if idx == 0 or s[idx - 1] == ' ' else char.lower() for idx, char in enumerate(list(s))])
 ```
