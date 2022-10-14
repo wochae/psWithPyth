@@ -10,7 +10,19 @@ def solution(s):
 ```
 nheo
 ```py
-// code
+def solution(s):
+    answer = ''
+    s = s.lower()
+    for i in range(len(s)):
+        if i == 0:
+            answer += s[i].upper()
+        else:
+            if s[i - 1].isspace() is True:
+                answer += s[i].upper()
+            else:
+                answer += s[i]
+    return answer
+
 ```
 donghyuk
 ```py
